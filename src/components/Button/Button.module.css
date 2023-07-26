@@ -1,0 +1,23 @@
+.loadMore {
+  margin: 0 auto;
+  padding: 12px 40px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  background: #9dc162;
+  border: none;
+  border-radius: 100px;
+}
+.loadMore:hover {
+  cursor: pointer;
+  background-color: #81a449;
+  box-shadow: 5px 3px 7px #475432;
+}
+.textBtn {
+  letter-spacing: -0.04em;
+  color: #fff;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  font-size: 24px;
+}

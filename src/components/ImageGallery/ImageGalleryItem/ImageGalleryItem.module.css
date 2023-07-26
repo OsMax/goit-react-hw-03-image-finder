@@ -1,0 +1,32 @@
+.item {
+  width: 360px;
+  height: 240px;
+  max-width: 90%;
+  transition: transform var(--animation-duration) var(--timing-function);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2), 0 1px 1px rgba(0, 0, 0, 0.14),
+    0 2px 1px -1px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+}
+.item:hover {
+  transform: scale(1.02);
+  box-shadow: 5px 3px 7px #475432;
+}
+.itemImg {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .item {
+    width: calc(50% - 12px);
+  }
+}
+@media screen and (min-width: 1240px) {
+  .item {
+    width: calc((100% - 48px) / 3);
+  }
+}

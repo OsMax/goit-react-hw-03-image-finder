@@ -1,0 +1,77 @@
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  margin: 0 auto;
+  padding: 4px;
+  height: 28px;
+}
+
+.item1 {
+  width: 24px;
+  height: 12px;
+  background-color: #9dc162;
+  animation-name: load;
+  animation-duration: 1500ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-delay: 0ms;
+  border-radius: 5px;
+}
+.item2 {
+  width: 24px;
+  height: 12px;
+  background-color: #9dc162;
+  animation-name: load;
+  animation-duration: 1500ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-delay: 300ms;
+  border-radius: 5px;
+}
+.item3 {
+  width: 24px;
+  height: 12px;
+  background-color: #9dc162;
+  animation-name: load;
+  animation-duration: 1500ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-delay: 600ms;
+  border-radius: 5px;
+}
+.item4 {
+  width: 24px;
+  height: 12px;
+  background-color: #9dc162;
+  animation-name: load;
+  animation-duration: 1500ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-delay: 900ms;
+  border-radius: 5px;
+}
+.item5 {
+  width: 24px;
+  height: 12px;
+  background-color: #9dc162;
+  animation-name: load;
+  animation-duration: 1500ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-delay: 1200ms;
+  border-radius: 5px;
+}
+@keyframes load {
+  0% {
+    height: 12px;
+  }
+  30% {
+    height: 24px;
+    background-color: #81a449;
+  }
+  60% {
+    height: 12px;
+  }
+}

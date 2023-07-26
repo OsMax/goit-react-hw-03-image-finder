@@ -1,0 +1,21 @@
+.gallery {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  width: 90%;
+  margin: 0 auto 20px;
+}
+.progressBar {
+  margin: 0 auto;
+}
+.progress-bar-wrapper {
+  margin: 0 auto;
+}
+
+.modalImg {
+  width: 100%;
+  border-radius: 20px;
+}
