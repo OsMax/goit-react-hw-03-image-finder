@@ -11,7 +11,7 @@ class Searchbar extends Component {
       <header className={css.searchbar}>
         <a href="index.html">
           <img
-            src="goit-react-hw-03-image-finder/logo-661013_1280.webp"
+            src={require('../images/logo-661013_1280.webp')}
             alt="pixabay"
             className={css.headerImg}
           />
