@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import css from './Button.module.css';
 
 const Button = ({ onShowMore }) => {
@@ -7,6 +8,10 @@ const Button = ({ onShowMore }) => {
       <span className={css.textBtn}>~ Show more ~</span>
     </button>
   );
+};
+
+Button.propTypes = {
+  onShowMore: PropTypes.func.isRequired,
 };
 
 export default Button;

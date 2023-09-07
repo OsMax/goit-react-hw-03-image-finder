@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import css from './ImageGallery.module.css';
+import PropTypes from 'prop-types';
 import ImageGalleryItems from './ImageGalleryItem';
 import Modal from './Modal';
+import css from './ImageGallery.module.css';
 
 class ImageGallery extends Component {
   state = {
@@ -53,5 +54,9 @@ class ImageGallery extends Component {
     );
   }
 }
+
+ImageGallery.propTypes = {
+  items: PropTypes.array,
+};
 
 export default ImageGallery;
