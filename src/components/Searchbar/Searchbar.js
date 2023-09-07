@@ -35,6 +35,6 @@ class Searchbar extends Component {
   }
 }
 
-Searchbar.prototype = { onSearch: PropTypes.func.isRequired };
+Searchbar.propTypes = { onSearch: PropTypes.func.isRequired };
 
 export default Searchbar;
