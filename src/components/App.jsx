@@ -32,7 +32,7 @@ class App extends Component {
       this.setState({ page: 1, items: [] });
       this.findByApi();
     }
-    if (this.state.page !== prevState.page) {
+    if (this.state.page !== prevState.page && this.state.page !== 1) {
       this.findByApi();
     }
   }
