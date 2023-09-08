@@ -27,16 +27,14 @@ class App extends Component {
   findByApi = () => {
     this.setState({ loading: true, showMore: false });
     API.getApi(this.state.textSearch, this.state.page).then(findImages => {
+      // console.log(findImages);
       this.setState({
         items: [...this.state.items, ...findImages.data.hits],
       });
-      if (
-        this.state.items.length >= findImages.data.totalHits ||
-        findImages.data.hits.length === 0
-      ) {
-        this.setState({ showMore: false });
-      } else {
+      if (this.state.page < Math.ceil(findImages.data.totalHits / 12)) {
         this.setState({ showMore: true });
+      } else {
+        this.setState({ showMore: false });
       }
 
       this.setState({ loading: false });
