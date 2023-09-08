@@ -31,8 +31,7 @@ class App extends Component {
     if (this.state.textSearch !== prevState.textSearch) {
       this.setState({ page: 1, items: [] });
       this.findByApi();
-    }
-    if (this.state.page !== prevState.page && this.state.page !== 1) {
+    } else if (this.state.page !== prevState.page) {
       this.findByApi();
     }
   }
