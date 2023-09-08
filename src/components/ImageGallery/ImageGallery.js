@@ -24,9 +24,11 @@ class ImageGallery extends Component {
       modalIsOpen: false,
       modalUrl: '',
     }));
+    document.body.style.overflow = 'scroll';
   };
 
   render() {
+    // console.log(this.props.items[0]);
     return (
       <>
         <ul className={css.gallery}>
@@ -56,7 +58,7 @@ class ImageGallery extends Component {
 }
 
 ImageGallery.propTypes = {
-  items: PropTypes.array,
+  items: PropTypes.array.isRequired,
 };
 
 export default ImageGallery;
